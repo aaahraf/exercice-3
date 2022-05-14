@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>formulaire</title>
+</head>
+<body>
+<h2 align="center">
+    Inscription
+</h2>
+<form Action="script.php" Method="post" name="formulaire">
+<fieldset >
+    <legend>informations personnelles</legend>
+
+<label>nom:</label><input Type="text" Name="nom" Size=20 maxlength=40><br><br>
+<label>prenom:</label><input Type="text" Name="prenom" Size=20 maxlength=40><br><br>
+    <label>age:</label><input Type="number" Name="age" Size=2 maxlength=5><br><br><br>
+<label>adresse </label><textarea name="adresse" rows="5" cols="20"></textarea><br><br>
+<label for="pass">mot de passe </label><input type="password" id="pass" name="password"
+           minlength="8" required><br><br>
+
+</fieldset>
+<fieldset>
+    <legend>
+     gestion des groupes et options
+    </legend>
+
+    <label> groupe</label>
+    <input type="radio" name="gpe1" id="gpe1" value="gpe1">groupe1
+<input type="radio" name="gpe1" id="gpe2" value="gpe1">groupe2
+<input type="radio" name="gpe1" id="gpe3" value="gpe1">groupe3<br><br>
+<label>numero du carte </label><input type="number" name="numero" size="8"><br>
+    <br>
+<label>choisissez les options </label><select name="option"><option value="fr">francais
+</option>
+<option value="ang">anglais</option>
+    <option value="allemand">allemand</option>
+    <option value="espagnol">espagnol</option><br><br>
+</select><br><br>
+    <label>email </label><input type="email"><br><br>
+
+    <label>url</label><input type="url"><br><br>
+    <label>date</label><input type="date"><br><br>
+    <button type="submit">submit</button>
+
+</fieldset>
+</form>
+
+</body>
+</html>
